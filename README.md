@@ -12,6 +12,7 @@ Support Comment Type
 
 INSTALL
 =======
-copy delcmt.exe or delcmt to pathed directory.
-copy delcmt.vim to vim plugin directory.
+Copy delcmt.exe or delcmt to pathed directory.
+In Mac or Unix, build with using make command.
+Copy delcmt.vim to vim plugin directory.
 
