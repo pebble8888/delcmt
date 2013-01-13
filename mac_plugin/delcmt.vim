@@ -14,4 +14,3 @@
 " Implementation below
 "
 map f !~/bin/delcmt
-
