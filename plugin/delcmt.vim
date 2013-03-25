@@ -13,4 +13,9 @@
 "
 " Implementation below
 "
-map f !~/bin/delcmt
+if has('win32') || has('win64')
+  map <Leader>f !delcmt
+else
+  map <Leader>f !~/bin/delcmt
+endif
+
