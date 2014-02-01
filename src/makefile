@@ -1,14 +1,18 @@
 # for mac
 CC = g++
+TARGET=delcmt
+LIBS=
+
+ifeq ($(OS),Windows_NT)
+LIBS+=-lversion -lstdc++
+endif
 
 .cpp.o:
 	$(CC) -c $<
 
-PROGRAM=delcmt
-
 SOURCES=delcmt.cpp
 
-all: $(PROGRAM)
+all: $(TARGET)
 
-$(PROGRAM): ${SOURCES:.cpp=.o}
-	$(CC) -o $@ $^
+$(TARGET): ${SOURCES:.cpp=.o}
+	$(CC) -o $@ $^ $(LIBS)
