@@ -14,8 +14,8 @@
 " Implementation below
 "
 if has('win32') || has('win64')
-	map <Leader>f !delcmt<CR>
+	map <Leader>d !delcmt<CR>
 else
-	map <Leader>f !~/bin/delcmt<CR>
+	map <Leader>d !~/bin/delcmt<CR>
 endif
 
